@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * pint - prints the value at the top of the stack
+ * pint_ - prints the value at the top of the stack
  * @stack: pointer to the stack
  * @line_number: line number
  */
 
-void pint(stack_t **stack, unsigned int line_number)
+void pint_(stack_t **stack, unsigned int line_number)
 {
 	if (!*stack)
 	{
@@ -20,12 +20,12 @@ void pint(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pop - removes the top element of the stack
+ * pop_ - removes the top element of the stack
  * @stack: pointer to the stack
  * @line_number: line number
  */
 
-void pop(stack_t **stack, unsigned int line_number)
+void pop_(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
 

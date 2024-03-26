@@ -22,12 +22,12 @@ int isNumber(const char *str)
 }
 
 /**
- * push - pushes an element to the stack
+ * push_ - pushes an element to the stack
  * @stack: pointer to the stack
  * @line_number: line number
  */
 
-void push(stack_t **stack, unsigned int line_number)
+void push_(stack_t **stack, unsigned int line_number)
 {
 	int n;
 
@@ -47,12 +47,12 @@ void push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pall - prints all the values on the stack, starting from the top
+ * pall_ - prints all the values on the stack, starting from the top
  * @stack: pointer to the stack
  * @line_number: line number
  */
 
-void pall(stack_t **stack, unsigned int line_number)
+void pall_(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
 

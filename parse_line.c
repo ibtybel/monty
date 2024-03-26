@@ -9,14 +9,14 @@
 void parse_line(char *line, stack_t **stack)
 {
 	instruction_t opcodes[] = {
-		{"push", push}, {"pall", pall},
-		{"pint", pint}, {"pop", pop},
-		{"swap", swap}, {"add", add},
-		{"nop", nop}, {"sub", sub},
-		{"div", div}, {"mul", mul},
-		{"mod", mod}, {"pchar", pchar},
-		{"pstr", pstr}, {"rotl", rotl},
-		{"rotr", rotr}, {"stack", stack_queue},
+		{"push", push_}, {"pall", pall_},
+		{"pint", pint_}, {"pop", pop_},
+		{"swap", swap_}, {"add", add_},
+		{"nop", nop_}, {"sub", sub_},
+		{"div", div_}, {"mul", mul_},
+		{"mod", mod_}, {"pchar", pchar_},
+		{"pstr", pstr_}, {"rotl", rotl_},
+		{"rotr", rotr_}, {"stack", stack_queue},
 		{"queue", stack_queue}, {NULL, NULL}
 	};
 	int i = 0;

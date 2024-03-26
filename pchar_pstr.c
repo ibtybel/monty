@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * pchar - prints the char at the top of the stack
+ * pchar_ - prints the char at the top of the stack
  * @stack: pointer to the stack
  * @line_number: line number
  */
 
-void pchar(stack_t **stack, unsigned int line_number)
+void pchar_(stack_t **stack, unsigned int line_number)
 {
 	if (!*stack)
 	{
@@ -28,12 +28,12 @@ void pchar(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pstr - prints the string starting at the top of the stack
+ * pstr_ - prints the string starting at the top of the stack
  * @stack: pointer to the stack
  * @line_number: line number
  */
 
-void pstr(stack_t **stack, unsigned int line_number)
+void pstr_(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
 	int n;

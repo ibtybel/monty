@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * sub - subtracts the top element of the stack from the second top element
+ * sub_ - subtracts the top element of the stack from the second top element
  * @stack: pointer to the stack
  * @line_number: line number
 */
 
-void sub(stack_t **stack, unsigned int line_number)
+void sub_(stack_t **stack, unsigned int line_number)
 {
 	int n;
 
@@ -19,17 +19,17 @@ void sub(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	n = (*stack)->n;
-	pop(stack, line_number);
+	pop_(stack, line_number);
 	(*stack)->n -= n;
 }
 
 /**
- * div - divides the second top element of the stack by the top element
+ * div_ - divides the second top element of the stack by the top element
  * @stack: pointer to the stack
  * @line_number: line number
 */
 
-void div(stack_t **stack, unsigned int line_number)
+void div_(stack_t **stack, unsigned int line_number)
 {
 	int n;
 
@@ -50,6 +50,6 @@ void div(stack_t **stack, unsigned int line_number)
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}
-	pop(stack, line_number);
+	pop_(stack, line_number);
 	(*stack)->n /= n;
 }
